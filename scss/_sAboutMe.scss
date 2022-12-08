@@ -1,0 +1,14 @@
+.sectionAboutMe{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .imgPerfil{
+        border-radius: 20px;
+    }
+    .textAboutMe{
+        margin-left: 30px;
+        text-align: center;
+        width: 30%;
+    }
+}
