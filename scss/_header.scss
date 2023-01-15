@@ -74,8 +74,8 @@ header {
             height: 80px;
             background-color: #bd7b24;
             border-radius: 100%;
+            z-index: 11;
             .menuHolder{
-                z-index: 11;
                 position: fixed;
                 right: 20px;
                 top: 25px;
@@ -85,7 +85,6 @@ header {
                     background-color: #bd7b24;
                     border: 0;
                     .barraBlanca{
-                        z-index: 11;
                         height: 5px;
                         width: 40px;
                         margin: 5px;
@@ -94,18 +93,18 @@ header {
                     }
                 }
             }
-        }
-        .menuWarp{
-            .menu{
-                position: fixed;
-                right: 8%;
-                top: 8%;
-                li{
-                    list-style: none;
-                    margin: 30px;
-                }
-                &#menu{
-                    color: rgba(255, 255, 255, 0)
+            .menuWarp{
+                .menu{
+                    display: flex;
+                    margin-top: 40%;
+                    margin-left: 10%;
+                    li{
+                        list-style: none;
+                        margin: 30px;
+                    }
+                    &#menu{
+                        color: rgba(255, 255, 255, 0)
+                    }
                 }
             }
         }

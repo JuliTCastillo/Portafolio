@@ -82,9 +82,9 @@ header {
     width: 80px;
     height: 80px;
     background-color: #bd7b24;
-    border-radius: 100%; }
+    border-radius: 100%;
+    z-index: 11; }
     header nav .menuCircle .menuHolder {
-      z-index: 11;
       position: fixed;
       right: 20px;
       top: 25px; }
@@ -94,21 +94,20 @@ header {
         background-color: #bd7b24;
         border: 0; }
         header nav .menuCircle .menuHolder .btn-contenedor .barraBlanca {
-          z-index: 11;
           height: 5px;
           width: 40px;
           margin: 5px;
           border-radius: 10px;
           background-color: #fff; }
-  header nav .menuWarp .menu {
-    position: fixed;
-    right: 8%;
-    top: 8%; }
-    header nav .menuWarp .menu li {
-      list-style: none;
-      margin: 30px; }
-    header nav .menuWarp .menu#menu {
-      color: rgba(255, 255, 255, 0); }
+    header nav .menuCircle .menuWarp .menu {
+      display: flex;
+      margin-top: 40%;
+      margin-left: 10%; }
+      header nav .menuCircle .menuWarp .menu li {
+        list-style: none;
+        margin: 30px; }
+      header nav .menuCircle .menuWarp .menu#menu {
+        color: rgba(255, 255, 255, 0); }
   @media (max-width: 768px) {
     header .waves {
       height: 40px;
@@ -119,7 +118,7 @@ header {
       font-size: 24px; } }
 
 .sectionAboutMe {
-  margin-top: 10%;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -128,7 +127,73 @@ header {
   .sectionAboutMe .textAboutMe {
     margin-left: 30px;
     text-align: center;
-    width: 30%; }
+    width: 25%; }
+
+:root {
+  --surface-color: #fff;
+  --curve: 40; }
 
 * {
-  margin: 0; }
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8; }
+
+.sProyect {
+  margin: 5% 30px; }
+  .sProyect h2 {
+    text-align: center; }
+  .sProyect .proyects {
+    margin: 5% 0px;
+    display: flex;
+    position: relative;
+    justify-content: space-around; }
+    .sProyect .proyects .cardProyect {
+      background-color: rgba(255, 255, 255, 0) !important;
+      border: none !important;
+      transition: transform .1s ease-in;
+      width: 350px; }
+      .sProyect .proyects .cardProyect img {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px; }
+      .sProyect .proyects .cardProyect .divDescription {
+        position: relative;
+        top: -3%;
+        background-color: #ecca9e;
+        padding: 15px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px; }
+        .sProyect .proyects .cardProyect .divDescription h4, .sProyect .proyects .cardProyect .divDescription p {
+          text-align: center; }
+        .sProyect .proyects .cardProyect .divDescription .divFlex {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 10px; }
+          .sProyect .proyects .cardProyect .divDescription .divFlex .btnSitio {
+            width: 50%;
+            height: 30px;
+            background-color: #fceedc;
+            border: none;
+            border-radius: 10px; }
+            .sProyect .proyects .cardProyect .divDescription .divFlex .btnSitio:hover {
+              background-color: #f3eee7; }
+      .sProyect .proyects .cardProyect:hover {
+        transform: scale(1.03, 1.03); }
+
+.sLanguage .carousel-item .itemCarousel {
+  display: flex;
+  justify-content: space-around; }
+  .sLanguage .carousel-item .itemCarousel .logo {
+    background-color: rgba(105, 105, 105, 0.116);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px; }
+    .sLanguage .carousel-item .itemCarousel .logo p {
+      padding: 5px;
+      text-align: center; }
+
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; }

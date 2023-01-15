@@ -1,5 +1,5 @@
 .sectionAboutMe{
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,18 @@
     .textAboutMe{
         margin-left: 30px;
         text-align: center;
-        width: 30%;
+        width: 25%;
     }
+}
+
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fef8f8;
 }
