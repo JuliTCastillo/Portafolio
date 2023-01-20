@@ -4,7 +4,7 @@ header {
     .header {
         position: relative;
         text-align: center;
-        background: linear-gradient(60deg, rgb(199, 153, 55) 0%, rgb(204, 141, 90) 100%);
+        background: linear-gradient(60deg, rgb(223, 153, 126) 0%, rgb(224, 168, 121) 100%);
         .inner-header {
             height: 65vh;
             width: 100%;
@@ -23,12 +23,12 @@ header {
             letter-spacing: 2px;
             font-size: 48px;
             width: 0;
+            color: #ffffff;
             overflow: hidden;
             white-space: nowrap;
             font-size: 2rem;
             margin: 0 auto;
-            font-family: "Courier New";
-            border-right: 0.15em solid #000000;
+            border-right: 0.15em solid #ffffff;
             animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
         }
     }
@@ -72,7 +72,7 @@ header {
             top: 10px;
             width: 80px;
             height: 80px;
-            background-color: #bd7b24;
+            background-color: #d1865b;
             border-radius: 100%;
             z-index: 11;
             .menuHolder{
@@ -82,7 +82,7 @@ header {
                 .btn-contenedor{
                     display: flex;
                     flex-direction: column;
-                    background-color: #bd7b24;
+                    background-color: #d1865b;
                     border: 0;
                     .barraBlanca{
                         height: 5px;

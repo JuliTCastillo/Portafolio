@@ -2,18 +2,15 @@
     from {
         width: 0;
     }
-
     to {
         width: 100%;
     }
 }
-
 @keyframes blink {
     50% {
         border-color: transparent;
     }
 }
-
 @keyframes moveIcon{
     0%{
         transform: rotate(0deg);
@@ -37,3 +34,15 @@
         transform: translate3d(85px, 0, 0);
     }
 }
+@keyframes wave-animation {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+}  

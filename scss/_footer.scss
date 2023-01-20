@@ -1,0 +1,16 @@
+footer{
+    background-color: #e6bb99;
+    padding: 2%;
+    .btnFooter{
+        background-color: #c49571;
+        border: none;
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+        &:hover{
+            background-color: #f0ccb0;
+            border: 2px solid #c49571;
+        }
+        
+    }
+}

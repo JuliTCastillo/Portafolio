@@ -1,4 +1,36 @@
 let estado = false;
+const iconCorreo = document.getElementById("iconCorreo");
+const iconDocument = document.getElementById("iconDocument");
+const btnDownload = document.getElementById("btnDownload");
+const btnSend = document.getElementById("btnSend");
+
+btnSend.addEventListener("click", e =>{
+    window.location.href = "mailto:julietacastillo326@gmail.com?Subject=Interesado%20Por%20CV";
+})
+btnDownload.addEventListener("click", e=>{
+    window.location.href = "../doc/CVJulietaTatianaCastillo.pdf"
+})
+
+btnSend.addEventListener("mouseover", e =>{
+    animacion(iconCorreo)
+})
+btnDownload.addEventListener("mouseover", e =>{
+    animacion(iconDocument)
+})
+const animacion = (item) =>{
+    item.animate(
+        [
+            //{background : "red"}
+            {transform: "rotate(0deg) rotate(30deg) rotate(-55deg) rotate(0deg)"},
+            {transform: "rotate(0deg) rotate(-30deg) rotate(55deg) rotate(0deg)"},
+            {transform: "rotate(0deg)"},
+        ],
+        {
+            duration: 200, 
+            fill:"both",
+        }
+    )
+}
 
 const activeAnimation = () =>{
     const spanCenter = document.getElementById("spanCentro");

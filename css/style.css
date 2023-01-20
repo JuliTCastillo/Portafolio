@@ -25,12 +25,21 @@
   100% {
     transform: translate3d(85px, 0, 0); } }
 
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(20deg); }
+  75% {
+    transform: rotate(-15deg); } }
+
 header {
   /*Shrinking for mobile*/ }
   header .header {
     position: relative;
     text-align: center;
-    background: linear-gradient(60deg, #c79937 0%, #cc8d5a 100%); }
+    background: linear-gradient(60deg, #df997e 0%, #e0a879 100%); }
     header .header .inner-header {
       height: 65vh;
       width: 100%;
@@ -47,12 +56,12 @@ header {
       letter-spacing: 2px;
       font-size: 48px;
       width: 0;
+      color: #ffffff;
       overflow: hidden;
       white-space: nowrap;
       font-size: 2rem;
       margin: 0 auto;
-      font-family: "Courier New";
-      border-right: 0.15em solid #000000;
+      border-right: 0.15em solid #ffffff;
       animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite; }
   header .waves {
     width: 100%;
@@ -81,7 +90,7 @@ header {
     top: 10px;
     width: 80px;
     height: 80px;
-    background-color: #bd7b24;
+    background-color: #d1865b;
     border-radius: 100%;
     z-index: 11; }
     header nav .menuCircle .menuHolder {
@@ -91,7 +100,7 @@ header {
       header nav .menuCircle .menuHolder .btn-contenedor {
         display: flex;
         flex-direction: column;
-        background-color: #bd7b24;
+        background-color: #d1865b;
         border: 0; }
         header nav .menuCircle .menuHolder .btn-contenedor .barraBlanca {
           height: 5px;
@@ -193,6 +202,19 @@ body {
     .sLanguage .carousel-item .itemCarousel .logo p {
       padding: 5px;
       text-align: center; }
+
+footer {
+  background-color: #e6bb99;
+  padding: 2%; }
+  footer .btnFooter {
+    background-color: #c49571;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px; }
+    footer .btnFooter:hover {
+      background-color: #f0ccb0;
+      border: 2px solid #c49571; }
 
 * {
   margin: 0;
