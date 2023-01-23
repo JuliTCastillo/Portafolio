@@ -24,3 +24,10 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #fef8f8;
 }
+
+@media screen and (max-width: 1050px) {
+    .sectionAboutMe{
+        flex-direction:column-reverse;
+    }
+    
+}

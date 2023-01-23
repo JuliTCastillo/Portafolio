@@ -14,3 +14,10 @@ footer{
         
     }
 }
+
+@media screen and (max-width: 700px) {
+    .scFooter{
+        flex-wrap: wrap;
+    }
+    
+}

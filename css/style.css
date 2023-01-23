@@ -52,7 +52,6 @@ header {
         align-items: center;
         text-align: center; }
     header .header .textMove {
-      font-weight: 300;
       letter-spacing: 2px;
       font-size: 48px;
       width: 0;
@@ -124,7 +123,9 @@ header {
     header .content {
       height: 30vh; }
     header h1 {
-      font-size: 24px; } }
+      font-size: 24px; }
+    header .textMove {
+      font-size: 14px; } }
 
 .sectionAboutMe {
   margin-top: 5%;
@@ -148,6 +149,10 @@ header {
 body {
   font-family: 'Noto Sans JP', sans-serif;
   background-color: #fef8f8; }
+
+@media screen and (max-width: 1050px) {
+  .sectionAboutMe {
+    flex-direction: column-reverse; } }
 
 .sProyect {
   margin: 5% 30px; }
@@ -181,12 +186,18 @@ body {
           align-items: center;
           margin: 10px; }
           .sProyect .proyects .cardProyect .divDescription .divFlex .btnSitio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 50%;
             height: 30px;
             background-color: #fceedc;
             border: none;
-            border-radius: 10px; }
+            border-radius: 10px;
+            color: black;
+            text-decoration: none; }
             .sProyect .proyects .cardProyect .divDescription .divFlex .btnSitio:hover {
+              border: #ecb09e solid 2px;
               background-color: #f3eee7; }
       .sProyect .proyects .cardProyect:hover {
         transform: scale(1.03, 1.03); }
@@ -203,6 +214,10 @@ body {
       padding: 5px;
       text-align: center; }
 
+@media screen and (max-width: 1200px) {
+  .proyects, .itemCarousel {
+    flex-wrap: wrap; } }
+
 footer {
   background-color: #e6bb99;
   padding: 2%; }
@@ -215,6 +230,10 @@ footer {
     footer .btnFooter:hover {
       background-color: #f0ccb0;
       border: 2px solid #c49571; }
+
+@media screen and (max-width: 700px) {
+  .scFooter {
+    flex-wrap: wrap; } }
 
 * {
   margin: 0;

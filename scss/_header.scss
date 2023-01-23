@@ -19,13 +19,12 @@ header {
             }
         }
         .textMove {
-            font-weight: 300;
             letter-spacing: 2px;
             font-size: 48px;
             width: 0;
             color: #ffffff;
             overflow: hidden;
-            white-space: nowrap;
+            white-space:nowrap;
             font-size: 2rem;
             margin: 0 auto;
             border-right: 0.15em solid #ffffff;
@@ -122,6 +121,9 @@ header {
 
         h1 {
             font-size: 24px;
+        }
+        .textMove{
+            font-size: 14px;
         }
     }
 }

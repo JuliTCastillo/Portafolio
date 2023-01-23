@@ -33,12 +33,18 @@
                     align-items: center;
                     margin: 10px;
                     .btnSitio{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         width: 50%;
                         height: 30px;
                         background-color: #fceedc;
                         border: none;
                         border-radius: 10px;
+                        color: black;
+                        text-decoration: none;
                         &:hover{
+                            border: #ecb09e solid 2px;
                             background-color: #f3eee7;
                         }
                     }
@@ -67,6 +73,13 @@
                 }
             }
         }
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .proyects, .itemCarousel {
+        flex-wrap: wrap;
     }
     
 }
