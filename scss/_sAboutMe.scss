@@ -28,6 +28,8 @@ body {
 @media screen and (max-width: 1050px) {
     .sectionAboutMe{
         flex-direction:column-reverse;
+        .textAboutMe{
+            width: 50%;
+        }
     }
-    
 }

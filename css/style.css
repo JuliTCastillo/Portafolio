@@ -152,7 +152,9 @@ body {
 
 @media screen and (max-width: 1050px) {
   .sectionAboutMe {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+    .sectionAboutMe .textAboutMe {
+      width: 50%; } }
 
 .sProyect {
   margin: 5% 30px; }
